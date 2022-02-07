@@ -26,7 +26,7 @@ header a{
 }
 header div{
     max-width: 1600px;
-    width: calc(100%-30px);
+    width: calc(100% - 30px);
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
