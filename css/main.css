@@ -1,6 +1,8 @@
 @charset "utf-8";
 @import url('https://fonts.googleapis.com/css2?family=Alata&display=swap');
-{font-family: 'Alata', sans-serif;}
+
+/* {font-family: 'Alata', sans-serif;} */
+
 @import url(//fonts.googleapis.com/earlyaccess/jejugothic.css);
 .jejugothic * { 
  font-family: 'Jeju Gothic', sans-serif;
@@ -18,21 +20,26 @@ img, video, iframe {display: block;}
 html, body {
     color: #333;  
 }
- 
+
+/* 맨 윗부분 */
+h1 {
+    font-size: 20px;
+}
 /* 큰 타이틀 */
 h3 {
     font-family: 'Alata', sans-serif;
     max-width: 1280px;
     width: calc(100% - 20px);
     margin: 0 auto;
-    text-align: right; 
+    text-align: center; 
     margin-bottom: 30px;
     font-size: 45px; 
 }
 /* 컨텐츠 타이틀 */
 h4 {
     font-size: 30px;
-    margin-top: 5px; 
+    margin-top: 10px;
+    margin-bottom: 10px; 
     letter-spacing: -1px;
 }
 
@@ -66,11 +73,11 @@ header div ul li a {
 /* main_visual 메인비주얼  ******************************/
 .main_visual { 
     width: 100%;
-    height: 80vh;
+    height: 50vh;
     z-index: 9;
     position: relative;
-    background-color: #333;
-    color: #fff;
+    background-color: #64C4ED; /* 6BC5D2, 1687A7, 64C4ED, 64B2CD */
+    color: #fff; 
     text-align: center;
 } 
 
@@ -84,7 +91,7 @@ header div ul li a {
 }
 .main_visual .mv_t h1 { 
     font-family: 'Alata', sans-serif;
-    font-size: 80px;
+    font-size: 60px;
 }
 .main_visual .mv_t p { 
     font-family: 'Alata', sans-serif;
@@ -110,11 +117,15 @@ header div ul li a {
     font-size: 20px;
 }
 .profile figure { 
+    height: 100%;
     overflow: hidden;
 }
 .profile figure img {
+    height: 100%;
+    object-fit: cover;
     width: 100%;
     display: block;
+    border-radius: 40px
 }
 .profile .photo p {
     margin-top: 10px;
@@ -126,6 +137,7 @@ header div ul li a {
     height: 100%; 
     padding: 50px;
     box-sizing: border-box;
+    border-radius: 40px
 }
 .profile .about dl { 
     /* text-align: right; */
@@ -163,13 +175,14 @@ header div ul li a {
     width: 35%;
 }
 .video .video_box .images {
-    width: 60%; 
+    width: 100%; 
+    margin-top: 15px;
     display: flex; 
     justify-content: space-between;
     flex-wrap: wrap;
 }
 .video .video_box .images figure {
-    width: 49%;
+    width: 24%;
     max-height: 240px;
     height: 18vw;
 }
@@ -177,8 +190,8 @@ header div ul li a {
     margin-bottom: 20px;
 }
 .video .video_box .images figure img {
-    width: 100%;
-    height: 100%;
+    width: 103%/* 100% */;
+    height: 75%/* 100% */;
     object-fit: cover;
     display: block;
 }
@@ -192,7 +205,7 @@ header div ul li a {
 
 /* BEST MEDIA 안에 있는 비디오 */
 .video .video_box .video_tag {
-    width: 100%;
+    width: 60%;
     height: auto;  
 }
 .video .video_box video {
@@ -254,18 +267,25 @@ header div ul li a {
     line-height: 45px;
     border: 1px solid #333;
 }
+.btn li:hover{
+    background-color: #333;
+
+}
 .btn li a {
     padding: 0 23px; 
 }
+.btn li:hover a{
+    color: #fff;
+}
 .btn li:first-child {
-    background-color: #333;
+    /* background-color: #333; */
 }
 .btn li:first-child a {
-    color: #fff;
+    /* color: #fff; */
 }
 
 .v2 {
-    background-color: rgba(241, 241, 241, 0.603);
+    background-color: #faf1f1 /* FAF3F3, ECCFD1, F6ECF0, F6E1E1, FEF6FB rgba(241, 241, 241, 0.603); */
 }
 
 
@@ -439,7 +459,7 @@ https://codesandbox.io/s/jke0r?file=/index.html:686-1415
 
 .imglist div {
     width: 24%;
-    height: 20vw;
+    height: 12vw;
     border: 1px solid #ccc;
     box-sizing: border-box;
    
